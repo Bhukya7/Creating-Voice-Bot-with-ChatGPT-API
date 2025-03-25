@@ -1,4 +1,4 @@
-# SecretKey Voice Assistant 🎙️🤖
+# Secret Key Voice Assistant 🎙️🤖
 
 This project demonstrates how to build an **intelligent voice assistant** using **OpenAI's GPT-3.5**, **speech recognition**, and **text-to-speech synthesis**. The bot can answer questions naturally and achieves **real-time response** with human-like interaction.
 
