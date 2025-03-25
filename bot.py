@@ -5,10 +5,8 @@ from dotenv import load_dotenv
 import os
 import time
 
-# Load environment variables
 load_dotenv()
 
-# ===== INITIALIZATION =====
 def initialize_tts():
     try:
         engine = pyttsx3.init()
@@ -37,7 +35,6 @@ def initialize_openai():
         print(f"OpenAI Initialization Error: {e}")
         return None
 
-# ===== CORE FUNCTIONS =====
 def get_SecretKey_response(client, question):
     predefined_responses = {
         "what should we know about your life story": "I'm SecretKey, an AI assistant created to help with information and tasks.",
@@ -103,11 +100,9 @@ def speak(engine, text):
     except Exception as e:
         print(f"Speaking Error: {e}")
 
-# ===== MAIN LOOP =====
 def voice_bot():
     print("Initializing SecretKey...")
     
-    # Initialize components
     engine = initialize_tts()
     recognizer = initialize_recognizer()
     client = initialize_openai()
