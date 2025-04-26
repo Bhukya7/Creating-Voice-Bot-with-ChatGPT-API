@@ -27,7 +27,7 @@ def initialize_recognizer():
 
 def initialize_openai():
     try:
-        api_key = os.getenv("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")
+        api_key = os.getenv("Your-API-Key")
         if not api_key:
             raise ValueError("OPENAI_API_KEY not found in .env file")
         return OpenAI(api_key=api_key)
